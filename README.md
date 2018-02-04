@@ -8,7 +8,10 @@ This plugin uses the `truffle compile` command, so you must have [Truffle](https
 
 I suggest you add this to your `.vimrc`:
 
-    autocmd QuickFixCmdPost make nested copen
+    augroup quickfix
+      autocmd!
+      autocmd QuickFixCmdPost make nested copen
+    augroup END
 
 ### Vundle
     Plugin 'dmdque/solidity.vim'
