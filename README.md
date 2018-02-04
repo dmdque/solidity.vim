@@ -1,14 +1,12 @@
 # Solidity Compiler Plugin
+![Demo](demo.png)
+
 ## Dependencies
-This plugin uses the `truffle compile` command, so you must have Truffle installed.
+This plugin uses the `truffle compile` command, so you must have [Truffle](https://github.com/trufflesuite/truffle) installed.
 
 ## Installation
-    cp solc.vim ~/.vim/compiler/solc.vim
-
-Add the following to your `.vimrc`:
-
-    autocmd FileType solidity compiler solc
-    autocmd QuickFixCmdPost make nested copen
+### Vundle
+    Plugin 'dmdque/solidity.vim'
 
 ## Usage
 Type `:make` from a `.sol` file.
